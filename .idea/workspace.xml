@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bfc290a-7b93-4553-8188-f2a1875c8a40" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/board.html" afterDir="false" />
     </list>
     <ignored path="GridLoadingEffects.iws" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="board.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/board.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="449">
+              <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -186,7 +185,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -199,6 +197,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -578,6 +577,7 @@
       <workItem from="1530020723604" duration="1966000" />
       <workItem from="1530082572982" duration="43000" />
       <workItem from="1530089556534" duration="1062000" />
+      <workItem from="1530097658009" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="git에 연동">
       <created>1530089854214</created>
@@ -590,7 +590,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97406000" />
+    <option name="totallyTimeSpent" value="97413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -617,16 +617,16 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="right" id="Properties" order="4" />
       <window_info anchor="right" id="IDEtalk" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Data View" order="4" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
-      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="11" />
@@ -1003,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/board.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="449">
+          <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
