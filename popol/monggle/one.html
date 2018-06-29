@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head>
+<meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+<title>나는 당신의 특별한 친구, 몽글몽글</title>
+<link href="include/style.css" rel="stylesheet" type="text/css">
+
+<script src="include/jquery.min.js"></script>
+<script language="javascript" src="include/top_move.js"></script>
+<style>
+*{list-style:none; margin:0; padding:0;}
+
+p#cf7_controls {
+    text-align:center;
+}
+.btn {
+    opacity: 0;
+}
+.btn:hover {
+    opacity: 1;
+}
+#cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+}
+#cf7 {
+    height:1000px;
+    width:100%;
+    margin:0 auto 10px;
+    position: relative;
+}
+
+#cf7 img.opaque {
+    z-index: 10;
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+}
+#cf7 img {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    left:0;
+    right: 0;
+    top: 0px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position:absolute;
+}
+.grid_second {
+    opacity:0;
+    position:absolute;
+}
+#section01{
+	width:100%; height:695px; background:#f5e7de}
+	/*width:100%; height:600px; background:#FFFFFF url(img/01.jpg) top center no-repeat;}*/
+
+#section02{
+	width:100%; height:585px; background:#FFFFFF;}
+
+#section03{
+	width:100%; height:1000px; background:#FFFFFF;}
+	
+#section04{
+	width:100%;background: #ffffff}
+	
+#section05{
+	width:100%; height:590px; background:#FFFFFF;}
+
+#section06{
+	width:100%; height:350px; background:#FFFFFF;}
+
+.menu_box{
+	width:100%; height:90px;z-index: 1000; color:#edddd3; position:fixed; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
+	
+	.fixed{
+		background:rgba(242,228,224,0.95); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
+	
+		.logo a{
+			font-size:18px; color:#333; font-family: arial; text-decoration:none;}
+			
+		.menu_box > ul{
+			float:right; padding:0 0px 0 0;}
+			
+			.menu_box li{
+				float:left; text-align:center; width:100px; }
+				
+				.menu_box a{
+					text-decoration:none; color:#888; line-height:90px; font-family: 'Nanum Gothic', sans-serif; font-size:12px;font-weight: bold; }
+					
+					/**메뉴부분 마우스 오버시 색상 **/
+					.menu_box a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;  text-decoration: underline}
+						
+					.menu_box li:nth-child(2) a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;}
+						
+					.menu_box li:nth-child(3) a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;}
+						
+					.menu_box li:nth-child(4) a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;}
+						
+					.menu_box li:nth-child(5) a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;}
+						
+					.menu_box li:nth-child(6) a:hover{
+						border-top:0px solid #fff; padding-top:40px; color:#888;}
+ body {
+	/*background-image: url(img/bg.gif);*/
+}
+#box {
+    border: 1px solid #000;
+    direction:rtl;
+    overflow:auto;
+}
+</style>
+</head>
+<body>
+<div dir="ltr" id="section01">
+    <div class="menu_box" style="position: fixed;">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+         <tr align="center" valign="center">
+           <td align="center"><table width="960" align="center" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+               <td style="padding-top: 15px">
+                   <a href="#section01"><img src="img/title.png"></a>
+               </td>
+               <td width="83" ><a href="#section01" >HOME</a></td>
+               <td width="90" ><a href="#section02" >ABOUT</a></td>
+               <td width="115" ><a href="#section03" >MONGLES</a></td>
+               <td width="75" ><a href="#section05" >LINK</a></td>
+               <td width="88" ><a href="#section06" >CONTACT US</a></td>
+               <td width="15" align="right" ></td>
+             </tr>
+           </table></td>
+         </tr>
+       </table>
+  </div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="90" align="center"></td>
+    </tr>
+        <tr>
+            <td height="605" align="center" bgcolor="#ffffff">
+                <video width="890" height="501" controls autoplay>
+                    <source src="video/두루애니_4.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+   </table>
+</div>
+<div id="section02">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="496" align="center" bgcolor="#f2e4e0"><img src="img/2_about.jpg"></td>
+    </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+<div id="section03">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" bgcolor="#fff"><table width="994px" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="center"><img src="img/btn1.png" onclick="button2_click();" style="cursor:pointer"></td>
+          <td height="100%" align="center" valign="bottom" id="cf7">
+              <img src="img/3_dogs/1/1_pomchi.jpg" name="photo" class='opaque'>
+              <img src="img/3_dogs/2/2_malteshu.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/3/3_maltechi.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/4/4_maltipoo.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/5/5_yorkipoo.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/6/6_sb.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/7/7_pomsky.jpg" name="photo" class="cf7"  >
+              <img src="img/3_dogs/8/mix.jpg" name="photo" class="cf7"  >
+          </td>
+          <td valign="center"><img src="img/btn2.png" onclick="button1_click();" style="cursor:pointer"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+<div id="section04">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center"><table width="960px" border="0" cellspacing="0" cellpadding="0">
+        <tr background="img/4_back.jpg">
+          <td colspan="3" align="center" valign="bottom">
+              <div id="reflash">
+                  <ul class="grid effect-1" id="grid">
+                      <li><img src="img/3_dogs/1/1.jpg" id="img01" style="padding-top: 30%"></li>
+                      <li><img src="img/3_dogs/1/2.jpg" id="img02" style="padding-left:10%"></li>
+                      <li><img src="img/3_dogs/1/3.jpg" id="img03" style="padding-right: 20%;padding-bottom: 10%;padding-top: 10%"></li>
+                      <li><img src="img/3_dogs/1/4.jpg" id="img04" style="padding-top: 15%;padding-left:5%; padding-bottom:15%"></li>
+                      <li><img src="img/3_dogs/1/5.jpg" id="img05" style="padding-left: 20%;"></li>
+                      <li><img src="img/3_dogs/1/6.jpg" id="img06" style="padding-left: 10%;padding-top: 10%;"></li>
+                      <li><img src="img/3_dogs/1/7.jpg" id="img07" style="padding-top: 20%;padding-bottom: 20%;"></li>
+                      <li><img src="img/3_dogs/1/8.jpg" id="img08" style="padding-top: 20%;"></li>
+                  </ul>
+              </div>
+          </td>
+        </tr></table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="section05">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="500" align="center" bgcolor="#f2e4e0">
+          <img src="img/4_link.jpg">
+          <div id="layer1" align="center" style="position:absolute; left:0px; top:4033px; width:100%; height:173px; z-index:1; border-width:100px; border-style:none;">
+              <a href="http://mareeapp.com"><img src="img/btn3.jpg" class="btn" style="padding-left: 9px"></a>
+              <a href="http://www.zooseyo.com"><img src="img/btn3.jpg" class="btn" style="padding-left: 74px"></a>
+              <a href="http://facebook.com/pawinhand"><img src="img/btn3.jpg" class="btn" style="padding-left: 59px"></a>
+              <a href="http://whelpy.co.kr"><img src="img/btn3.jpg" class="btn" style="padding-left: 59px"></a>
+          </div>
+      </td>
+    </tr> 
+  </table>
+</div>
+<div id="section06">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ff8219">
+    <tr>
+      <td align="center" valign="top" bgcolor="#f7f7f7"><img src="img/5_contactus.jpg"></td>
+    </tr>
+  </table>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td height="80" align="center" bgcolor="#d4bbad"><img src="img/bottom.gif" usemap="#maptag" ></td>
+        <map name="maptag">
+            <area shape="rect" coords="798,29,831,61" href="http://blog.naver.com/y_yeong10" target="_blank">
+            <area shape="rect" coords="858,29,890,61" href="https://www.facebook.com/hyeyeong.lee.35" target="_blank">
+            <area shape="rect" coords="917,29,949,61" href="http://instagram.com/luvuduru   " target="_blank">
+        </map>
+    </tr>
+</table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="960" height="50" align="center" bgcolor="#000000" class="t12_wg" ><iframe src="../setup/links.html" frameborder="0" width="100%" height="50" scrolling="No"></iframe></td>
+    </tr>
+  </table>
+</div>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/AnimOnScroll.js"></script>
+<script>
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+    } );
+</script>
+<script>
+    var maxLoops = 8;
+    var bInterval =3;
+    var count = 1;
+
+    var fade_InOut = null;
+    var fade_InOut2 = null;
+
+    //jQuery
+    function button1_click() {
+        $("#cf7 img").removeClass("opaque");
+        if (count < maxLoops) {
+            count++;
+        }
+        else {
+            count = 1;
+        }
+        $("#cf7 img").eq(count-1).addClass("opaque");
+        for(var i=1;i<=8;i++){
+            $('#img0'+i).attr('src','img/3_dogs/'+count+'/'+i+'.jpg');
+        }
+//        $("#cf7_controls span").removeClass("cf7");
+  //      $(this).addClass("cf7");
+    }
+    function button2_click() {
+        $("#cf7 img").removeClass("opaque");
+        if (count > 1) {
+            count--;
+        }
+        else {
+            count = maxLoops;
+        }
+        $("#cf7 img").eq(count-1).addClass("opaque");
+    }
+
+    /**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>
