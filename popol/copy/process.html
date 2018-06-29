@@ -1,0 +1,316 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Welecom to Yacsokgallery.com !</title>
+<link href="include/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="initial-scale=0.65,width=device-width,maximum-scale=3.0, minimum-scale=0.65, user-scalable=yes">
+<script src="include/jquery.min.js"></script>
+<script type="text/javascript" src="include/jquery-1.7.js"></script>
+<script language="javascript">
+	var idx = 1;
+ 
+	function fImgClick(pIdx)
+	{
+		idx = pIdx;
+		
+		ImgFadeInOut();
+	}
+	var document = window.document;
+	$(document).ready(function() {
+		
+		$("#gallery1").attr("onclick", "").unbind("click");
+		$("#gallery1").bind("click", function (){fImgClick('0');});		
+		$("#gallery2").attr("onclick", "").unbind("click");
+		$("#gallery2").bind("click", function (){fImgClick('1');});		
+		$("#gallery3").attr("onclick", "").unbind("click");
+		$("#gallery3").bind("click", function (){fImgClick('2');});	
+		$("#gallery4").attr("onclick", "").unbind("click");
+		$("#gallery4").bind("click", function (){fImgClick('3');});
+		$("#gallery5").attr("onclick", "").unbind("click");
+		$("#gallery5").bind("click", function (){fImgClick('4');});
+		$("#gallery6").attr("onclick", "").unbind("click");
+		$("#gallery6").bind("click", function (){fImgClick('5');});
+		$("#gallery7").attr("onclick", "").unbind("click");
+		$("#gallery7").bind("click", function (){fImgClick('6');});
+		$("#gallery8").attr("onclick", "").unbind("click");
+		$("#gallery8").bind("click", function (){fImgClick('7');});
+		$("#gallery9").attr("onclick", "").unbind("click");
+		$("#gallery9").bind("click", function (){fImgClick('8');});
+		$("#gallery10").attr("onclick", "").unbind("click");
+		$("#gallery10").bind("click", function (){fImgClick('9');});
+		$("#gallery11").attr("onclick", "").unbind("click");
+		$("#gallery11").bind("click", function (){fImgClick('10');});
+		$("#gallery12").attr("onclick", "").unbind("click");
+		$("#gallery12").bind("click", function (){fImgClick('11');});
+		$("#gallery13").attr("onclick", "").unbind("click");
+		$("#gallery13").bind("click", function (){fImgClick('12');});
+		$("#gallery14").attr("onclick", "").unbind("click");
+		$("#gallery14").bind("click", function (){fImgClick('13');});
+		$("#gallery15").attr("onclick", "").unbind("click");
+		$("#gallery15").bind("click", function (){fImgClick('14');});
+		$("#gallery16").attr("onclick", "").unbind("click");
+		$("#gallery16").bind("click", function (){fImgClick('15');});
+		$("#gallery17").attr("onclick", "").unbind("click");
+		$("#gallery17").bind("click", function (){fImgClick('15');});
+		$("#gallery18").attr("onclick", "").unbind("click");
+		$("#gallery18").bind("click", function (){fImgClick('15');});
+		
+
+
+		$("#gallery1").css("cursor","pointer");
+		$("#gallery2").css("cursor","pointer");
+		$("#gallery3").css("cursor","pointer");
+ 		$("#gallery4").css("cursor","pointer");
+		$("#gallery5").css("cursor","pointer");
+		$("#gallery6").css("cursor","pointer");
+		$("#gallery7").css("cursor","pointer");
+		$("#gallery8").css("cursor","pointer");
+		$("#gallery9").css("cursor","pointer");
+ 		$("#gallery10").css("cursor","pointer");
+		$("#gallery11").css("cursor","pointer");
+		$("#gallery12").css("cursor","pointer");
+ 		$("#gallery13").css("cursor","pointer");
+		$("#gallery14").css("cursor","pointer");
+		$("#gallery15").css("cursor","pointer");
+ 		$("#gallery16").css("cursor","pointer");
+		$("#gallery17").css("cursor","pointer");
+ 		$("#gallery18").css("cursor","pointer");
+		for (var i=1; i <= 18; i++)
+		{
+			if(idx == i){  
+				$(".gallery_bg" + i).show();     
+			}else{         
+				$(".gallery_bg" + i).hide();  
+			}     
+		}
+ 
+		setInterval("ImgFadeInOut()",7000)
+ 
+	});
+ 
+ 
+	function ImgFadeInOut(){  
+ 
+		idx++;   
+ 
+		if(idx > 18){idx = 1;}  
+ 
+		for (var i=1; i <= 18; i++)
+		{
+			if(idx == i){    
+				$(".gallery_bg" + i).fadeIn(500); 
+				$("#gallery" + i).attr("src", "../images/common/ball_r.png");
+			}else{       
+				$(".gallery_bg" + i).fadeOut(500); 
+				$("#gallery" + i).attr("src", "../images/common/ball.png");
+			}   
+		} 
+	} 
+ </script>
+ 
+ <style>
+
+.gallery_bg1{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p1.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg2{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p2.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg3{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p3.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg4{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p4.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg5{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p5.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg6{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p6.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg7{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p7.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg8{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p8.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg9{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p9.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg10{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p10.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg11{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p11.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg12{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p12.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg13{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p13.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg14{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p14.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg15{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p15.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg16{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p16.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+.gallery_bg17{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p17.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gallery_bg18{
+	width:100%;
+/*	height:200px;*/
+    background:url(img/p18.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+
+ body {
+	background-color: #fff;
+}
+ </style>
+ 
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+  <tr>
+    <td height="830" align="center" valign="bottom"><table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="830" align="right"><img src="img/trans.gif" width="953" height="830" usemap="#Map_gallery">
+          <map name="Map_gallery">
+          <area shape="circle" coords="884,757,20" href="#" name="gallery17" id="gallery18">
+          <area shape="circle" coords="837,758,20" href="#" name="gallery17" id="gallery17">
+          <area shape="circle" coords="788,756,20" href="#" name="gallery16" id="gallery16">
+          <area shape="circle" coords="740,756,20" href="#" name="gallery15" id="gallery15">
+          <area shape="circle" coords="693,756,20" href="#" name="gallery14" id="gallery14">
+          <area shape="circle" coords="643,756,20" href="#" name="gallery13" id="gallery13">
+          <area shape="circle" coords="595,757,20" href="#" name="gallery12" id="gallery12">
+          <area shape="circle" coords="548,757,20" href="#" name="gallery11" id="gallery11">
+          <area shape="circle" coords="500,755,20" href="#" name="gallery10" id="gallery10">
+          <area shape="circle" coords="450,756,20" href="#" name="gallery9" id="gallery9">
+          <area shape="circle" coords="404,758,20" href="#" name="gallery8" id="gallery8">
+          <area shape="circle" coords="356,756,20" href="#" name="gallery7" id="gallery7">
+          <area shape="circle" coords="308,757,20" href="#" name="gallery6" id="gallery6">
+          <area shape="circle" coords="258,758,20" href="#" name="gallery5" id="gallery5">
+          <area shape="circle" coords="210,757,20" href="#" name="gallery4" id="gallery4">
+          <area shape="circle" coords="164,756,20" href="#" name="gallery3" id="gallery3">
+          <area shape="circle" coords="117,757,20" href="#" name="gallery2" id="gallery2">
+            <area shape="circle" coords="67,758,20" href="#" name="gallery1" id="gallery1">
+          </map></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div class="gallery_bg1" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg2" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg3" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg4" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg5" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg6" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg7" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg8" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg9" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg10" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg11" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg12" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg13" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg14" style="position:absolute;width:100%;height:8308px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg15" style="position:absolute;width:100%;height:830px;left:0px; top:0px; z-index:-10;"></div>
+<div class="gallery_bg16" style="position: absolute; width: 100%; height: 830px; left: 0px; top: 0px; z-index: -10;"></div>
+<div class="gallery_bg17" style="position: absolute; width: 100%; height: 830px; left: 0px; top: 0px; z-index: -10;"></div>
+<div class="gallery_bg18" style="position: absolute; width: 100%; height: 830px; left: 0px; top: 0px; z-index: -10;"></div>
+</body>
+</html>
